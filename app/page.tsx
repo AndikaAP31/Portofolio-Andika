@@ -24,7 +24,7 @@ export default function Home() {
     {
       id: 1,
       title: "Website Viera Group",
-      desc: "Website profil perusahaan Viera untuk promosi resort dan cafe.",
+      desc: "Website profil perusahaan Viera untuk mempromosikan resort dan cafe milik mereka.",
       img: "/Screenshot 2025-12-03 002056.png",
       tags: ["Laravel", "Tailwind", "JS"],
       demo: "https://vieragroup.my.id",
@@ -36,7 +36,7 @@ export default function Home() {
     {
       id: 2,
       title: "Aplikasi Klasifikasi Jamur",
-      desc: "Aplikasi ML untuk klasifikasi jamur beracun/tidak melalui gambar.",
+      desc: "Aplikasi ML untuk klasifikasi jamur beracun/tidak melalui gambar menggunakan algoritma SVM.",
       img: "/jamur.png",
       tags: ["Streamlit", "Python", "SVM"],
       demo: "#",
@@ -52,7 +52,7 @@ export default function Home() {
     {
       id: 3,
       title: "Rekomendasi Kursus",
-      desc: "Sistem rekomendasi kursus online menggunakan NLP.",
+      desc: "Sistem rekomendasi kursus online dengan menggunakan NLP.",
       img: "/kursus.png",
       tags: ["Streamlit", "NLP", "Python"],
       demo: "#",
@@ -60,30 +60,31 @@ export default function Home() {
       showCode: true,
       isGallery: true, 
       gallery: [
-        "/kursus.png",
-        "https://via.placeholder.com/500x500/1e293b/FFFFFF?text=NLP+Model",
-        "https://via.placeholder.com/400x700/1e293b/FFFFFF?text=Mobile+View"
+        "/project3/Rekomendasikursus1.png",
+        "/project3/Rekomendasikursus2.png",
+        "/project3/Rekomendasikursus3.png",
+        "/project3/Rekomendasikursus4.png"
       ]
     },
     {
       id: 4,
       title: "Scraper Jurnal",
-      desc: "Web pencarian jurnal akademik menggunakan API publik.",
-      img: "/scraper.png",
+      desc: "Web pencarian jurnal akademik menggunakan beberapa API publik terpercaya dan terkenal.",
+      img: "/project4/scraper1.png",
       tags: ["Streamlit", "API", "Python"],
       demo: "#",
       code: "https://github.com/AndikaAP31/ScraperJurnal.git",
       showCode: true,
       isGallery: true, 
       gallery: [
-        "/scraper.png",
-        "https://via.placeholder.com/600x300/1e293b/FFFFFF?text=API+Integration"
+        "/project4/scraper1.png",
+        "/project4/scraper2.png"
       ]
     },
     {
       id: 5,
       title: "Resto Track",
-      desc: "CCTV cerdas dengan computer vision untuk pantau pengunjung restoran.",
+      desc: "CCTV cerdas dengan computer vision untuk memantau dan mengawasi pengunjung restoran.",
       img: "/restotrack.png",
       tags: ["Python", "YOLO", "CV"],
       demo: "#",
@@ -91,9 +92,11 @@ export default function Home() {
       showCode: false, 
       isGallery: true, 
       gallery: [
-        "/restotrack.png",
-        "https://via.placeholder.com/400x300/1e293b/FFFFFF?text=YOLO+Detection",
-        "https://via.placeholder.com/300x500/1e293b/FFFFFF?text=Realtime+Monitoring"
+        "/project5/resto.png",
+        "/project5/resto1.png",
+        "/project5/resto2.png",
+        "/project5/resto3.png",
+        "/project5/resto4.png"
       ]
     },
     {
@@ -200,7 +203,7 @@ export default function Home() {
               <h2 className="text-2xl md:text-3xl font-bold text-white mb-6 border-l-4 border-cyan-500 pl-4">Tentang Saya</h2>
               <div className="space-y-4 text-slate-400 leading-relaxed text-sm md:text-base">
                 <p className="text-justify">
-                  Saya adalah seorang mahasiswa yang berfokus pada pengembangan web, analisis data, dan machine learning. Dengan latar belakang dalam teknologi, saya bersemangat untuk menggabungkan kreativitas dan keahlian teknis untuk menciptakan solusi inovatif yang memecahkan masalah dunia nyata.
+                  Saya adalah seorang mahasiswa yang berfokus pada pengembangan web, analisis data, dan machine learning. Dengan latar belakang dalam teknologi, saya bersemangat untuk menggabungkan kreativitas dan keahlian teknis untuk menciptakan solusi inovatif yang dapat memecahkan masalah dunia nyata.
                 </p>
                 <p className="text-justify hidden md:block">
                   Di sini, Anda dapat menemukan berbagai proyek yang telah saya kerjakan, mulai dari pengembangan aplikasi web interaktif hingga penerapan model machine learning. Saya selalu berusaha untuk terus belajar dan memberikan hasil terbaik di setiap pekerjaan yang saya lakukan.
@@ -314,7 +317,7 @@ export default function Home() {
           <div className="text-center mb-10 md:mb-16">
             <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">Portofolio Saya</h2>
             <p className="text-slate-400 max-w-2xl mx-auto text-sm md:text-base">
-              Berikut adalah beberapa proyek yang telah saya kerjakan untuk mengasah kemampuan saya dalam pengembangan web dan AI.
+              Berikut adalah beberapa proyek yang telah saya kerjakan untuk mengasah kemampuan saya dalam pengembangan website dan model AI.
             </p>
           </div>
 
@@ -448,7 +451,7 @@ export default function Home() {
             <div className="flex flex-col md:flex-row gap-4 md:gap-8 text-sm text-slate-400 mt-4">
               <div className="flex items-center gap-2 justify-center hover:text-cyan-400 transition cursor-pointer">
                 <Phone size={16} />
-                <a href="tel:+6287774498699">+62 877-7449-8699</a>
+                <a href="https://wa.me/6287774498699">+62 877-7449-8699</a>
               </div>
               <div className="flex items-center gap-2 justify-center hover:text-cyan-400 transition cursor-pointer">
                 <Mail size={16} />

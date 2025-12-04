@@ -126,10 +126,10 @@ export default function Home() {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-8 text-sm font-medium">
-            <a href="#" onClick={(e) => handleScroll(e, 'home')} className="hover:text-cyan-400 transition">Beranda</a>
-            <a href="#about" onClick={(e) => handleScroll(e, 'about')} className="hover:text-cyan-400 transition">Tentang Saya</a>
-            <a href="#skills" onClick={(e) => handleScroll(e, 'skills')} className="hover:text-cyan-400 transition">Keahlian</a>
-            <a href="#projects" onClick={(e) => handleScroll(e, 'projects')} className="hover:text-cyan-400 transition">Portofolio</a>
+            <a href="#" onClick={(e) => handleScroll(e, 'home')} className="hover:text-cyan-400 active:text-cyan-400 transition">Beranda</a>
+            <a href="#about" onClick={(e) => handleScroll(e, 'about')} className="hover:text-cyan-400 active:text-cyan-400 transition">Tentang Saya</a>
+            <a href="#skills" onClick={(e) => handleScroll(e, 'skills')} className="hover:text-cyan-400 active:text-cyan-400 transition">Keahlian</a>
+            <a href="#projects" onClick={(e) => handleScroll(e, 'projects')} className="hover:text-cyan-400 active:text-cyan-400 transition">Portofolio</a>
           </div>
 
           {/* Tombol Kontak Desktop */}
@@ -178,7 +178,7 @@ export default function Home() {
             <a href="#about" className="px-6 py-3 bg-cyan-600 hover:bg-cyan-500 text-white rounded-md font-semibold transition w-full sm:w-auto text-center">
               Tentang Saya
             </a>
-            <a href="#projects" className="px-6 py-3 border border-cyan-600 text-cyan-400 hover:bg-cyan-600/10 rounded-md font-semibold transition w-full sm:w-auto text-center">
+            <a href="#projects" className="px-6 py-3 border border-cyan-600 text-white hover:bg-cyan-600 active:bg-cyan-700 active:scale-95 cursor-pointer 10 rounded-md font-semibold transition w-full sm:w-auto text-center">
               Lihat Karya
             </a>
           </div>
@@ -255,8 +255,8 @@ export default function Home() {
               { name: "TensorFlow", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg" },
               { name: "C", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" },
             ].map((skill, index) => (
-              <div key={index} className="bg-[#1e293b] border border-slate-700 rounded-xl p-4 md:p-6 flex flex-col items-center justify-center gap-3 md:gap-4 hover:border-cyan-500 hover:-translate-y-1 transition duration-300 group">
-                <div className="w-10 h-10 md:w-12 md:h-12 relative grayscale group-hover:grayscale-0 transition duration-300">
+              <div key={index} className="bg-[#1e293b] border border-slate-700 rounded-xl p-4 md:p-6 flex flex-col items-center justify-center gap-3 md:gap-4 hover:border-cyan-500 active:border-cyan-500 hover:-translate-y-1 transition duration-300 group">
+                <div className="w-10 h-10 md:w-12 md:h-12 relative grayscale group-hover:grayscale-0 group-active:grayscale-0 transition duration-300">
                   <img src={skill.icon} alt={skill.name} className="w-full h-full object-contain" />
                 </div>
                 <span className="text-slate-300 font-medium text-xs md:text-sm group-hover:text-white transition">{skill.name}</span>
@@ -277,8 +277,8 @@ export default function Home() {
               { name: "Figma", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" },
               { name: "Google Colab", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecolab/googlecolab-original.svg" },
             ].map((tool, index) => (
-              <div key={index} className="bg-[#1e293b] border border-slate-700 rounded-xl p-4 md:p-6 flex flex-col items-center justify-center gap-4 hover:border-cyan-500 hover:-translate-y-1 transition duration-300 group">
-                <div className={`w-10 h-10 md:w-12 md:h-12 relative grayscale group-hover:grayscale-0 transition duration-300 ${tool.invert ? "invert group-hover:invert-0" : ""}`}>
+              <div key={index} className="bg-[#1e293b] border border-slate-700 rounded-xl p-4 md:p-6 flex flex-col items-center justify-center gap-4 hover:border-cyan-500 active:border-cyan-500 hover:-translate-y-1 transition duration-300 group">
+                <div className={`w-10 h-10 md:w-12 md:h-12 relative grayscale group-hover:grayscale-0 group-active:grayscale-0 transition duration-300 ${tool.invert ? "invert group-hover:invert-0" : ""}`}>
                   <img src={tool.icon} alt={tool.name} className="w-full h-full object-contain" />
                 </div>
                 <span className="text-slate-300 font-medium text-xs md:text-sm group-hover:text-white transition">{tool.name}</span>
@@ -299,7 +299,7 @@ export default function Home() {
               { name: "Berpikir Kritis", icon: Brain },
               { name: "Adaptabilitas", icon: Zap },
             ].map((soft, index) => (
-              <div key={index} className="bg-[#1e293b] border border-slate-700 rounded-xl p-4 md:p-6 flex flex-col items-center justify-center gap-4 hover:border-cyan-500 hover:-translate-y-1 transition duration-300 group cursor-default">
+              <div key={index} className="bg-[#1e293b] border border-slate-700 rounded-xl p-4 md:p-6 flex flex-col items-center justify-center gap-4 hover:border-cyan-500 active:border-cyan-500 hover:-translate-y-1 transition duration-300 group cursor-default">
                 <div className="text-slate-500 group-hover:text-cyan-400 transition duration-300">
                   <soft.icon size={40} strokeWidth={1.5} className="md:w-12 md:h-12" />
                 </div>
@@ -323,16 +323,16 @@ export default function Home() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {projects.map((project, idx) => (
-              <div key={idx} className="bg-[#0f172a] border border-slate-800 rounded-xl overflow-hidden hover:shadow-cyan-500/20 hover:shadow-xl transition group flex flex-col">
+              <div key={idx} className="bg-[#0f172a] border border-slate-800 rounded-xl overflow-hidden hover:shadow-cyan-500/20 hover:shadow-xl active:shadow-xl transition group flex flex-col">
                 {/* Thumbnail */}
                 <div className="h-48 overflow-hidden relative">
                   <div className="absolute inset-0 bg-cyan-900/20 group-hover:bg-transparent transition z-10"></div>
-                  <img src={project.img} alt={project.title} className="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+                  <img src={project.img} alt={project.title} className="w-full h-full object-cover group-hover:scale-110 group-active:scale-110 transition duration-500" />
                 </div>
 
                 {/* Content */}
                 <div className="p-6 flex flex-col flex-grow">
-                  <h3 className="text-lg md:text-xl font-bold text-white mb-2 group-hover:text-cyan-400 transition">{project.title}</h3>
+                  <h3 className="text-lg md:text-xl font-bold text-white mb-2 group-hover:text-cyan-400 group-active:text-cyan-400 transition">{project.title}</h3>
                   <p className="text-slate-400 text-sm mb-4 flex-grow">{project.desc}</p>
                   <div className="flex flex-wrap gap-2 mb-6">
                     {project.tags.map((tag, i) => (
@@ -347,7 +347,7 @@ export default function Home() {
                     {project.isGallery ? (
                       <button
                         onClick={() => setSelectedProject(project)}
-                        className="flex-1 text-center py-2 bg-slate-800 hover:bg-cyan-600 text-white text-sm rounded transition"
+                        className="flex-1 text-center py-2 bg-slate-800 hover:bg-cyan-600 active:bg-cyan-700 active:scale-95 cursor-pointer text-white text-sm rounded transition"
                       >
                         Demo
                       </button>
@@ -356,7 +356,7 @@ export default function Home() {
                         href={project.demo}
                         target="_blank"
                         rel="noreferrer"
-                        className="flex-1 text-center py-2 bg-slate-800 hover:bg-cyan-600 text-white text-sm rounded transition"
+                        className="flex-1 text-center py-2 bg-slate-800 hover:bg-cyan-600 active:bg-cyan-700 active:scale-95 cursor-pointer text-white text-sm rounded transition"
                       >
                         Demo
                       </a>
@@ -440,7 +440,7 @@ export default function Home() {
                 { href: "https://instagram.com/andika_arsana", icon: Instagram, label: "Instagram" }
               ].map((social, i) => (
                 <a key={i} href={social.href} target="_blank" rel="noopener noreferrer" className="group flex flex-col items-center gap-2 text-slate-400 hover:text-white transition">
-                  <div className="p-3 bg-slate-800 rounded-full group-hover:bg-cyan-600 transition duration-300">
+                  <div className="p-3 bg-slate-800 rounded-full group-hover:bg-cyan-600 active:bg-cyan-700 active:scale-95 cursor-pointer transition duration-300">
                     <social.icon size={20} />
                   </div>
                   <span className="text-xs font-medium">{social.label}</span>

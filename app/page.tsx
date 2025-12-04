@@ -45,7 +45,7 @@ export default function Home() {
       isGallery: true, 
       gallery: [
         "/project2/jamur1.png",
-        "/project2/jamur2.png",
+        "/project2/Jamur2.png",
         "/project2/jamur3.png"
       ]
     },
